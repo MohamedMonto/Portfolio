@@ -1,0 +1,832 @@
+:root
+{
+    --main-color: #1C1C1C;
+}
+*
+{
+    box-sizing: border-box;
+}
+body {
+    padding: 0;
+    margin: 0;
+}
+/* home */
+#home
+{
+    background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url(../img/bg.jpg);
+    background-size: cover;
+    background-position: center center;
+    background-attachment: fixed;
+   
+}
+#home .navbar {
+    background-color: rgba(0, 0, 0, 0.3);
+    z-index: 99;
+}
+#home  .navbar-brand:hover,
+#home .nav-link:hover,
+#home .navbar-nav .nav-link.active,
+#home  .navbar-nav .nav-link.show 
+{
+    color: white;
+}
+#home .nav-link {
+    font-family: "Poppins";
+    font-style: normal;
+    font-size: 14px;
+    font-weight: 400;
+}
+#home .nav-link::after {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 10px;
+    width: 0%;
+    height: 1px;
+    background-color: white;
+    transition: width 0.5s;
+}
+#home  .nav-link:hover::after {
+    width: 60%;
+}
+#home .nav-link.active::after {
+    width: 60%;
+}
+.navlogo{
+    font-family: "Montserrat";   
+}
+.caption h3::after {
+    content: "";
+    animation: type 10s infinite;
+}
+.hhead {
+    left: 50%;
+    top: 40%;
+    transform: translate(-50%, -50%);
+}
+.headcap {
+    left: 50%;
+    top: 52%;
+    transform: translate(-50%, -50%);
+    font-size: 60px !important;
+    line-height:72px;
+    font-weight: 400 ;
+    font-family:"Montserrat";
+}
+
+.icon-header{
+    left: 50%;
+    top: 70%;
+    transform: translate(-50%, -50%);
+}
+
+.icon-header i{
+    width: 34px;
+    height: 34px;
+    background-color: #0D1316;
+    cursor: pointer;
+}
+
+@keyframes type {
+    1% {
+        content: "De|"
+    }
+
+    4% {
+        content: "Dev|"
+    }
+
+    6% {
+        content: "Deve|"
+    }
+
+    8% {
+        content: "Devel|"
+    }
+
+    10% {
+        content: "Develo|"
+    }
+
+    12% {
+        content: "Develop|"
+    }
+
+    14% {
+        content: "Develope|"
+    }
+
+    16% {
+        content: "Developer|"
+    }
+
+    18% {
+        content: "Developer|"
+    }
+
+    20% {
+        content: "Develope|"
+    }
+
+    22% {
+        content: "Develop|"
+    }
+
+    24% {
+        content: "Develo|"
+    }
+
+    26% {
+        content: "Devel|"
+    }
+
+    28% {
+        content: "Deve|"
+    }
+
+    30% {
+        content: "Dev|"
+    }
+
+    32% {
+        content: "De|"
+    }
+
+    34% {
+        content: "D|"
+    }
+
+    36% {
+        content: "D|"
+    }
+
+    38% {
+        content: "De|"
+    }
+
+    40% {
+        content: "Des|"
+    }
+
+    42% {
+        content: "Desi|"
+    }
+
+    44% {
+        content: "Desig|"
+    }
+
+    46% {
+        content: "Design|"
+    }
+
+    48% {
+        content: "Designe|"
+    }
+
+    50% {
+        content: "Designer|"
+    }
+
+    52% {
+        content: "Designer|"
+    }
+
+    54% {
+        content: "Designe|"
+    }
+
+    56% {
+        content: "Design|"
+    }
+
+    58% {
+        content: "Desig|"
+    }
+
+    60% {
+        content: "Desi|"
+    }
+
+    62% {
+        content: "Des|"
+    }
+
+    64% {
+        content: "De|"
+    }
+
+    66% {
+        content: "D|"
+    }
+
+    68% {
+        content: "L|"
+    }
+
+    70% {
+        content: "La|"
+    }
+
+    72% {
+        content: "Lar|"
+    }
+
+    74% {
+        content: "Larr|"
+    }
+
+    76% {
+        content: "Larry|"
+    }
+
+    78% {
+        content: "Larry D|"
+    }
+
+    80% {
+        content: "Larry Da|"
+    }
+
+    82% {
+        content: "Larry Dan|"
+    }
+
+    83% {
+        content: "Larry Dani|"
+    }
+
+    84% {
+        content: "Larry Danie|"
+    }
+
+    85% {
+        content: "Larry Daniel|"
+    }
+
+    85% {
+        content: "Larry Daniels|"
+    }
+
+
+
+    86% {
+        content: "Larry Dniel|"
+    }
+
+    87% {
+        content: "Larry Dnie|"
+    }
+
+    88% {
+        content: "Larry Dni|"
+    }
+
+    89% {
+        content: "Larry Dn|"
+    }
+
+    90% {
+        content: "Larry D|"
+    }
+
+    91% {
+        content: "Larry|"
+    }
+
+    92% {
+        content: "Larr|"
+    }
+
+    95% {
+        content: "Lar|"
+    }
+
+    98% {
+        content: "La|"
+    }
+
+    100% {
+        content: "L|"
+    }
+
+
+
+}
+/* home */
+/* About  */ 
+.layerbg{
+    width: 80%;
+    transform: translate(-10%,30%);
+    background-image: url(../img/dots.png);
+    background-repeat: repeat;
+    height: 80%;
+}
+.img-about{
+   z-index: 9 !important;
+}
+.content-about h3{
+    color:
+#343434;
+font-size:
+30px;
+line-height:
+33px;font-weight:
+800;font-family:
+"Montserrat";
+
+}
+.content-about span{
+    font-weight:
+    400;
+    line-height:
+20px;
+color:
+#999999;
+font-family :
+"Poppins" ;
+
+}
+
+.progress{
+    background-color: #F7F7F7;
+    box-shadow:  0px 2px 7px rgba(0, 0, 0, 0.15) inset;
+        border-radius: 5px;
+        margin-bottom: 5%;
+        height: 25px;
+        animation: load 5s normal forwards;
+
+}
+.progress-bar{
+    color: white;
+    background-color: var(--main-color) 
+    ;
+    font-size:
+13px;
+font-weight:
+500;
+font-family: "Montserrat";
+
+}
+
+
+
+  
+  @keyframes load {
+    0% { width: 0; }
+    100% { width: 100%; }
+  }
+
+.prospan{
+    left: 1%;
+}
+.prospanl{
+    left: 85%;
+}
+.prodiv1{
+    left: 90%;
+}
+.prodiv2{
+    left: 75%;
+}
+
+
+.mark{
+    background-color: rgb(0, 0, 0);
+    transition: all 0.5s;
+}
+
+.mark:hover{
+    background-color: var(--main-color) !important;
+    color: white !important;
+
+}
+
+
+.prd3{
+    width: 90%;
+    animation: prd3 3s ;
+}
+.content-about p{
+    color: #748182;
+    line-height:
+24px;
+font-size:
+15px;
+font-family: "Poppins";
+}
+/* about  */
+/* services */
+#Services {
+    background-color: #F5F5F5;
+}
+
+.title-box-text-center {
+    text-align: center;
+    position: relative;
+}
+
+
+.title-box-text-center h3{
+    font-size: 40px;
+    line-height: 44px;
+    font-family: "Montserrat";
+    color: #343434;
+    font-weight: 900;
+    position: absolute;
+    top: 20%;
+
+
+    
+}
+
+.title-box-text-center .line-mf {
+
+    width: 250px;
+    height: 30px;
+    
+    background-image: url(../img/dots.png);
+    background-repeat: repeat;
+    text-align: center;
+}
+
+
+
+
+.services-box {
+    background-color: #fff;
+    padding: 2.5rem 1.3rem;
+    border-radius: 1rem;
+    margin-bottom: 3rem;
+    text-align: center;
+    box-shadow: 0 13px 8px -10px rgba(0, 0, 0, 0.1);
+
+}
+
+
+.service-box .ico-circle {
+    transition: all 500ms ease;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.ico-circle {
+    height: 70px;
+    width: 70px;
+    font-size: 2rem;
+    border-radius: 50%;
+    line-height: 1.55;
+    margin: 0 auto;
+    text-align: center;
+    /* box-shadow: 0 0 0 10px var(--main-color);     */
+    display: block;
+    transition: all 0.5s;
+    background-color: #f4f4f4;;
+}
+.ico-circle i{
+ /* background-color: #0062D3; */
+ font-size: 26px;
+
+}
+
+ .services-box:hover .ico-circle   {
+    color: white;
+    background-color: var(--main-color);
+    /* box-shadow: 0 0 0 10px #CDE1F8; */
+
+}
+
+
+#Services .container .services-box .services-ico .ico-circle {
+    font-size: 40px;
+    display: flex;
+    justify-content: center;
+
+    align-items: center;
+
+}
+
+.service-content {
+    text-align: center;
+}
+
+.service-content h2{
+    font-size: 18px;
+    font-family: "Montserrat";
+    font-weight: 800;
+    line-height: 19px;
+}
+.service-content p{
+        line-height: 24px;
+        font-size: 14px;
+        color: #748182;
+        font-weight: 400;
+}
+
+
+
+
+/* Services*/
+/* protfolio */
+
+ 
+#works .nav-tabs .nav-item button {
+    color: var(--main-color);
+    border: none;
+    font-weight: bolder;
+    
+}
+#works .layer {
+    position: absolute;
+
+    top: 10px;
+
+    bottom: 0px;
+    left: 10px;
+    right: 10px;
+    background-color: #ffffffe5;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    text-align: center;
+    opacity: 0;
+    -webkit-transition: all 0.5s;
+    -o-transition: all 0.5s;
+    transition: all 0.5s;
+
+}
+
+
+#works .layer p{
+    color: #343434;
+    font-size: 12px;
+        font-weight: 700;
+        line-height: 14px;
+        letter-spacing: 2px;
+        font-family: "Montserrat";
+        transform: translate(0px, -10px);
+        transition: all 0.5s;
+        
+}
+
+#works .layer:hover p{
+    transform: translate(0px, 0px);
+}
+
+
+#works .layer:hover i{
+    transform: translate(0px, 0px);
+}
+
+ #works .item:hover .layer {
+    bottom: 10px;
+    opacity: 1;
+} 
+
+
+
+
+
+#works .iconitem i {
+    width: 30px;
+    height: 30px;
+    display: -webkit-inline-box;
+    display: -ms-inline-flexbox;
+    display: inline-flex;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    cursor: pointer;
+    background-color: var(--main-color);
+    color: white    ;
+    border: solid 1px var(--main-color);
+
+}
+
+
+
+#works .iconitem i:hover{
+    background-color: white;
+    color: var(--main-color);
+}
+
+.modal-header{
+    top: 10%;
+    left: 71%;
+    z-index: 9999;
+}
+
+.icon-modal{
+    color: #e7e7e7;
+    
+}
+
+/* protfolio */
+
+/* clients */
+
+
+.carousel-indicators [data-bs-target] {
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    background-color: #869791;
+    margin-right: 1%;
+    
+}
+
+#clients  {
+    background-color: #F7F7F7 ;
+
+}
+.client-item p{
+    color: #748182;
+    font-family: "Poppins";
+    font-size: 15px;
+    font-weight: 400;
+    line-height:24px;
+}
+/* clients */
+/* overlay */
+
+
+
+.cardclint-ico-circle {
+    height: 60px;
+    width: 60px;
+    font-size: 2rem;
+    line-height: 1.55;
+    margin: 0 auto;
+    text-align: center;
+    display: block;
+    transition: all 0.5s;
+    color: var(--main-color);
+}
+
+.cardclint-content {
+    text-align: center;
+    color: var(--main-color);
+}
+
+.cardclint-content h2{
+    font-size: 30px;
+    line-height: 33px;
+    font-family: "Montserrat";
+    font-weight: 900;
+}
+
+
+
+
+.cardclint-content p{
+    font-size: 15px;
+    line-height: 24px;
+    font-family: "Poppins";
+    font-weight: 600;
+    color: #748182;
+}
+
+/* overlay */
+
+/* team */
+#team .layer {
+    position: absolute;
+
+    top: 40px;
+
+    bottom: 40px;
+    left: 40px;
+    right: 40px;
+    background-color: #ffffffe7;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    text-align: center;
+    opacity: 0;
+    -webkit-transition: all 0.7s;
+    -o-transition: all 0.7s;
+    transition: all 0.7s;
+-webkit-transform: scale(0.5);
+-moz-transform: scale(0.5);
+-ms-transform: scale(0.5);
+-o-transform: scale(0.5);
+transform: scale(0.5);
+transform:  rotateY(0deg)
+    
+
+}
+
+#team .layer-group:hover .layer  {
+    
+    opacity: 1;
+   
+    transform:  rotateY(360deg) scale(1.2   ) ;
+    
+
+}
+#team .item img{
+    transition: all 0.5s;
+
+}
+
+#team .item:hover  img{
+    transform: scale(1.1);
+}
+
+
+
+.content-team{
+    background-color: #5B5B5B;
+    color: white;
+}
+
+
+
+.content-team h4{
+  line-height: 28px;
+  font-weight: 500;
+  font-size: 25px;
+  font-family: "Montserrat"; 
+}
+.content-team h5{
+ line-height: 22px;
+ font-weight: 700;
+ font-family: "Montserrat"; 
+ font-size: 20px;
+}
+
+
+
+
+#team .iconitem i {
+    width: 40px;
+    height: 40px;
+    display: -webkit-inline-box;
+    display: -ms-inline-flexbox;
+    display: inline-flex;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    background-color: var(--main-color);
+    color: white;
+    margin: 5px ;
+
+}
+
+#team .iconitem i:hover{
+    background-color: white;
+    color: #000000;
+    cursor: pointer;
+}
+/* team */
+
+
+/* contact */
+.footer-form input ,.footer-form textarea{
+    color: #6f6f6f;
+    background-color: #F4F4F4;
+    outline: 1;
+    border: none;
+}
+.footer-form button{
+    background-color: var(--main-color);
+    color: white;
+    transition: all 1s;
+} 
+.footer-form button:hover{
+    background-color: white;
+    color: var(--main-color);
+    border: var(--main-color) solid 1px;
+}
+
+.form-control:focus{
+    
+    box-shadow: none;
+    background-color: #F4F4F4;
+   
+}
+
+.end-footer {
+    background-color: var(--main-color);
+    color: #748182;
+}
+/* contact */
